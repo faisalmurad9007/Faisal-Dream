@@ -11,62 +11,134 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text('This Faisal Page',
-
-            style: TextStyle(
-              fontSize: 50,
-              color: Colors.red,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 1.5,
-              wordSpacing: 5,
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
             ),
-          ),
-          Text('This Faisal Page',
-
-            style: TextStyle(
-              fontSize: 50,
-              color: Colors.red,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 1.5,
-              wordSpacing: 5,
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
             ),
-          ),
-          Text('This Faisal Page',
-
-            style: TextStyle(
-              fontSize: 50,
-              color: Colors.red,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 1.5,
-              wordSpacing: 5,
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
             ),
-          ),
-
-          Text('This Faisal Page',
-
-            style: TextStyle(
-              fontSize: 50,
-              color: Colors.red,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 1.5,
-              wordSpacing: 5,
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
             ),
-          ),
-          Text('This Faisal Page',
-
-            style: TextStyle(
-              fontSize: 50,
-              color: Colors.red,
-              fontWeight: FontWeight.w400,
-              letterSpacing: 1.5,
-              wordSpacing: 5,
+        
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
             ),
-          ),
-
-        ],
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+            Text('This Faisal Page',
+        
+              style: TextStyle(
+                fontSize: 50,
+                color: Colors.red,
+                fontWeight: FontWeight.w400,
+                letterSpacing: 1.5,
+                wordSpacing: 5,
+              ),
+            ),
+        
+          ],
+        ),
       )
     );
   }
