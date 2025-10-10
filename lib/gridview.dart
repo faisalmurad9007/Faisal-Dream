@@ -10,8 +10,12 @@ class GridV extends StatelessWidget {
           appBar: AppBar(
             title: Text('Gridview'),
           ),
+
           body: GridView.count(
               crossAxisCount: 2,
+              padding: EdgeInsets.all(10),
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
               children: List.generate(10, (index)=>Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
