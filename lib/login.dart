@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset('asset/Youtube-Logo-Transparent-PNG.png',
+              Image.asset('asset/Untitled-2.png',
                 height: 250,width: 250,
               ),
               Text('Login With Phone & Password'),
@@ -81,6 +81,13 @@ class LoginPage extends StatelessWidget {
                           }
                         }, child: Text('Submit'))),
                     SizedBox(height: 20,),
+                    //Navigator name
+                    ElevatedButton(onPressed: (){
+                      Navigator.pushNamed(context, 'input');
+                    }, child: Text('input')),
+                    ElevatedButton(onPressed: (){
+                      Navigator.pushReplacementNamed(context, 'home');
+                    }, child: Text('home')),
                     ElevatedButton(onPressed: (){
                       Navigator.push(context, MaterialPageRoute(
                           builder: (context)=> Dashboard()));

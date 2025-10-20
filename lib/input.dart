@@ -15,9 +15,8 @@ class input extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.network(
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1-svjRdLkLz2mk5FtHBuugVpB38sRJ9XC7A&s',
-              ),
+              Image.asset('asset/Untitled-2.png',
+                height: 150,width: 150,),
               SizedBox(height: 10),
               TextField(
                 controller: mobileController,
