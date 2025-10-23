@@ -1,5 +1,9 @@
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+
+import 'Components/Category.dart';
+import 'Components/Sorting.dart';
+import 'Components/aapbar.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -26,25 +30,25 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavyBarItem(
               icon: Icon(Icons.home),
               title: Text('Home'),
-              activeColor: kpink,
-              inactiveColor: Colors.grey[300]),
+              activeColor: Colors.black12,
+              inactiveColor: Colors.blueGrey[200]),
           BottomNavyBarItem(
             icon: Icon(Icons.favorite_rounded),
             title: Text('Favorite'),
-            inactiveColor: Colors.grey[300],
-            activeColor: kpink,
+            inactiveColor: Colors.blueGrey[200],
+            activeColor: Colors.black12,
           ),
           BottomNavyBarItem(
             icon: Icon(Icons.message),
             title: Text('Messages'),
-            inactiveColor: Colors.grey[300],
-            activeColor: kpink,
+            inactiveColor: Colors.blueGrey[200],
+            activeColor: Colors.black12,
           ),
           BottomNavyBarItem(
             icon: Icon(Icons.person),
             title: Text('Profile'),
-            inactiveColor: Colors.grey[300],
-            activeColor: kpink,
+            inactiveColor: Colors.blueGrey[200],
+            activeColor: Colors.black12,
           ),
         ],
       ),
@@ -65,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: const [
                           Text(
-                            "Hi Julia",
+                            "Hi Faisal",
                             style: TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.bold,
@@ -75,9 +79,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             height: 10.0,
                           ),
                           Text(
-                            "Today is a good day\nto learn something new!",
+                            "বাংলাদেশ শিখবে অনলাইনে ",
                             style: TextStyle(
-                              color: Colors.black54,
+                              color: Colors.blueGrey,
                               wordSpacing: 2.5,
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
@@ -89,13 +93,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       Column(
                         children: [
                           Container(
-                            height: 70,
+                            height: 50,
                             width: 70,
                             decoration: BoxDecoration(
-                                color: kpurple,
+                                color: Colors.white30,
                                 borderRadius: BorderRadius.circular(15.0)),
                             child: Image.asset(
-                              "assets/images/profile.png",
+                              "asset/images-removebg-preview.png"
                             ),
                           ),
                         ],
@@ -126,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         onTap: () {},
                         child: const Text(
                           "See All",
-                          style: TextStyle(fontSize: 16, color: kblue),
+                          style: TextStyle(fontSize: 16, color: Colors.black),
                         ),
                       ),
                     ],

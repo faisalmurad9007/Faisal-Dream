@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'HomeScreen.dart';
+import 'HScreen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -8,7 +8,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey,
       body: SafeArea(
         child: Column(
           children: [
@@ -17,19 +17,19 @@ class WelcomeScreen extends StatelessWidget {
                 child: Container(
                   width: double.infinity,
                   decoration: const BoxDecoration(
-                      color: Colors.blue,
+                      color: Colors.grey,
                       borderRadius:
                       BorderRadius.only(bottomRight: Radius.circular(50))),
                   child: Column(
                     children: [
-                      Expanded(child: Image.asset("assets/images/welcome.png"))
+                      Expanded(child: Image.asset("asset/ostadl.png"))
                     ],
                   ),
                 )),
             Expanded(
                 flex: 2,
                 child: Container(
-                  color: Colors.blue,
+                  color: Colors.grey,
                   child: Container(
                     width: double.infinity,
                     decoration: const BoxDecoration(
@@ -43,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
                         children: [
                           Spacer(),
                           Text(
-                            "Learning everything",
+                            "বাংলাদেশ শিখবে লাইভে",
                             style: TextStyle(
                               fontSize: 28,
                               fontWeight: FontWeight.bold,
@@ -51,7 +51,7 @@ class WelcomeScreen extends StatelessWidget {
                           ),
                           Spacer(),
                           Text(
-                            "Learn with pleasure with us,where you are!",
+                            "স্কিল শেখার মাধ্যমে বদলে ফেলুন নিজের ভবিষ্যৎ!",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.black54,
@@ -73,7 +73,7 @@ class WelcomeScreen extends StatelessWidget {
                                 height: 60,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(15.0)),
-                                color: Colors.blue,
+                                color: Colors.yellow,
                                 onPressed: () {
                                   //home screen path
                                   Navigator.push(
@@ -82,11 +82,11 @@ class WelcomeScreen extends StatelessWidget {
                                           builder: (context) => HomeScreen()));
                                 },
                                 child: Text(
-                                  "Get Started",
+                                  "শেখ শুরু করুন",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
-                                      color: Colors.white),
+                                      color: Colors.black),
                                 ),
                               )
                             ],

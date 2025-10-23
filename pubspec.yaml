@@ -32,10 +32,29 @@ dependencies:
     sdk: flutter
 
 
+  bottom_navy_bar: ^6.0.0
+  jk_custom_appbar: ^1.0.0
+  sorting: ^0.0.1
+  custom_animation_appbar: ^2.0.0
+  animated_custom_appbar: ^1.0.4
+  smooth_sort: ^2.0.1
+  list_with_categories: ^0.1.7
+  gap: ^3.0.1
+  flutter_svg: ^2.0.5
+  sliver_app_bar_builder: ^1.1.0
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  auto_size_text: ^3.0.0
+  collection: ^1.19.1
+
+
+  flutter_screenutil: ^5.9.3
+
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+
   flutter_contacts: ^1.1.9+2
   persistent_bottom_nav_bar: ^6.2.1
   crystal_navigation_bar: ^1.0.4
@@ -49,7 +68,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
