@@ -22,12 +22,8 @@ class Contn extends StatelessWidget {
 
               decoration: BoxDecoration(
 
-                color: Colors.orangeAccent,
-                gradient: LinearGradient(
-                    colors:[Colors.blueGrey,
-                    Colors.purple],
-                begin: Alignment.bottomRight,
-                end: Alignment.topLeft),
+                color: Colors.yellowAccent,
+
                 borderRadius: BorderRadius.circular(15),
                 boxShadow: [
                   BoxShadow(
@@ -36,22 +32,66 @@ class Contn extends StatelessWidget {
                     offset: Offset(10, 5),
                   ),
                   BoxShadow(
-                    color: Colors.red,
+                    color: Colors.white,
                     blurRadius: 5,
                     offset: Offset(5, 10),
                   )
                 ],
 
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.phone,size: 40,color: Colors.black,),
-                  Text('Faisal',
-                  style: TextStyle(
-                    fontSize: 30,
-                  ),),
-                ],
+              child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+                child: Column(
+                  
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset('asset/2024-12-18T15-22-42.948Z-Flutter-Thumbnail.jpg'),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(children: [
+                  Text('ব্যাচ ৪',
+                    style: TextStyle(
+                      backgroundColor: Colors.white10,
+                      fontSize: 10,fontWeight: FontWeight.bold,
+                    ),),
+                  SizedBox(width: 5,),
+                  Text('৬ সিট বাকি',
+
+                    style: TextStyle(
+                        backgroundColor: Colors.white10,
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold
+
+
+                    ),),
+                  SizedBox(width: 10,),
+                  Text('৩৪ দিন বাকি',
+
+                    style: TextStyle(
+                        backgroundColor: Colors.white10,
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold
+
+
+                    ),),
+                ],),
+              ),
+                    Text('Full Stack Web Development',
+                    style: TextStyle(
+                      backgroundColor: Colors.white10,
+                      fontSize: 10,fontWeight: FontWeight.bold,
+
+                    ),),
+                    SizedBox(height: 10,),
+                    Text('বিস্তারিত দেখি',
+
+                      style: TextStyle(
+                        backgroundColor: Colors.white,
+                        fontSize: 10,fontWeight: FontWeight.bold,
+
+                      ),),
+                  ],
+                ),
               )
             ),
           ],

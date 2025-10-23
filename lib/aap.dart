@@ -1,14 +1,23 @@
+import 'package:faisal_dream/Work.dart';
 import 'package:faisal_dream/gridview.dart';
 import 'package:faisal_dream/stack.dart';
 import 'package:faisal_dream/theme.dart';
+import 'package:faisal_dream/widget.dart';
 import 'package:flutter/material.dart';
 
+import 'Assignment.dart';
+import 'Class Stack.dart';
 import 'ContactCard.dart';
+import 'HomeScreen.dart';
+import 'WelcomeScreen.dart';
+import 'Widget/citycard1.dart';
 import 'container.dart';
 import 'flist.dart';
+import 'heropage.dart';
 import 'home.dart';
 import 'input.dart';
 import 'login.dart';
+import 'ownwidget.dart';
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -71,7 +80,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Faisal Dream',
       home: ThemeTest(),
-      initialRoute: 'Stack',
+      initialRoute: 'WelcomeScreen',
       routes: {
         'home': (context)=>Home(),
         'input': (context)=>input(),
@@ -79,6 +88,19 @@ class MyApp extends StatelessWidget {
         'List': (context)=>FList(),
         'ContactCard': (context)=>ContactCard(name: 'Faisal', phoneNumber: '+8801912697055',),
         'Stack': (context)=>stack(),
+        'OwnWidget': (context)=>OwnWidget(),
+        'CityCard': (context)=>CityCard(),
+        'Class2Stack': (context)=>Class2Stack(),
+        'HeroPage': (context)=>HeroPage(),
+        'OWidget': (context)=>OWidget(),
+        'Assignment': (context)=>Assignment(),
+        'Container': (context)=>Contn(),
+        'GridView': (context)=>GridV(),
+        'Work': (context)=>Work(),
+        'WelcomeScreen': (context)=>WelcomeScreen(),
+        'HomeScreen': (context)=>HomeScreen(),
+
+        'CityCard1': (context)=>CityCard1(img: 'https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I=', title: 'London', rating: '4.8'),
       },
     );
   }
