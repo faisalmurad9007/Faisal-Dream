@@ -1,5 +1,6 @@
 import 'package:faisal_dream/Grid.dart';
 import 'package:faisal_dream/Work.dart';
+import 'package:faisal_dream/calcalutor/calcalutor.dart';
 import 'package:faisal_dream/signuppage.dart';
 import 'package:faisal_dream/responsive.dart';
 import 'package:faisal_dream/stack.dart';
@@ -85,7 +86,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'Faisal Dream',
       home: ThemeTest(),
-      initialRoute: 'ToDoAap',
+      initialRoute: 'Calcalutor',
       routes: {
         'home': (context)=>Home(),
         'input': (context)=>input(),
@@ -107,6 +108,7 @@ class MyApp extends StatelessWidget {
         'Responsive': (context)=>respon(),
         'SignUpPage': (context)=>SignUpPage(),
         'ToDoAap': (context)=>ToDoAap(),
+        'Calcalutor': (context)=>Calcalutor(),
 
 
         'CityCard1': (context)=>CityCard1(img: 'https://media.istockphoto.com/id/1347665170/photo/london-at-sunset.jpg?s=612x612&w=0&k=20&c=MdiIzSNKvP8Ct6fdgdV3J4FVcfsfzQjMb6swe2ybY6I=', title: 'London', rating: '4.8'),
