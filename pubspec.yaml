@@ -47,6 +47,7 @@ dependencies:
   auto_size_text: ^3.0.0
   collection: ^1.19.1
   hugeicons: ^1.1.1
+  http: ^1.6.0
 
 
 
