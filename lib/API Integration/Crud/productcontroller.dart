@@ -1,6 +1,4 @@
 import 'dart:convert';
-
-
 import 'package:http/http.dart' as http;
 
 import 'MODEL/productModel.dart';
@@ -10,6 +8,9 @@ class ProductController {
   List<Data> products = [];
   bool isLoading = true;
 
+  // ---------------------------
+  // READ PRODUCTS
+  // ---------------------------
   Future fetchProducts() async {
     final response = await http.get(Uri.parse(Urls.readProduct));
 
@@ -22,12 +23,13 @@ class ProductController {
     }
   }
 
+  // ---------------------------
+  // CREATE PRODUCT
+  // ---------------------------
   Future<bool> createProduct(Data data) async {
     final response = await http.post(
       Uri.parse(Urls.createProduct),
-      headers: {
-        'Content-Type' : 'application/json'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: jsonEncode({
         "ProductName": data.productName,
         "ProductCode": DateTime.now().microsecondsSinceEpoch,
@@ -38,22 +40,42 @@ class ProductController {
       }),
     );
 
-    print(response.body);
+    print("CREATE: ${response.body}");
 
-    if (response.statusCode == 200) {
-      return true;
-    } else {
-      return false;
-    }
+    return response.statusCode == 200;
   }
 
-  Future<bool> deleteProduct(String ProductId) async {
-    final response = await http.get(Uri.parse(Urls.deleteProduct(ProductId)));
-    print(Urls.deleteProduct(ProductId));
-    if (response.statusCode == 200) {
-      return true;
-    } else {
-      return false;
-    }
+  // ---------------------------
+  // DELETE PRODUCT
+  // ---------------------------
+  Future<bool> deleteProduct(String productId) async {
+    final response = await http.get(Uri.parse(Urls.deleteProduct(productId)));
+
+    print("DELETE: ${response.body}");
+
+    return response.statusCode == 200;
+  }
+
+  // ---------------------------
+  // UPDATE PRODUCT
+  // ---------------------------
+  Future<bool> updateProduct(Data data) async {
+
+    final response = await http.post(
+      Uri.parse(Urls.updateProduct(data.sId.toString())),   // <-- Important
+      headers: { "Content-Type": "application/json" },
+
+      body: jsonEncode({
+        "ProductName": data.productName,
+        "Img": data.img,
+        "Qty": data.qty,
+        "UnitPrice": data.unitPrice,
+        "TotalPrice": data.totalPrice,
+      }),
+    );
+
+    print("UPDATE: ${response.body}");
+
+    return response.statusCode == 200;
   }
 }
